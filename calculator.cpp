@@ -40,7 +40,7 @@ int main() {
 	printf("\n10. Minimum, maximum, difference functions");
 	printf("\n11. Other functions");
 	printf("\n12. Exit");
-	printf("\nYour option: ");
+	printf("\nEnter choice: ");
 	scanf_s("%d", &opt);
 	fseek(stdin, 0, SEEK_END);
 
