@@ -1224,7 +1224,7 @@ int main() {
 		}
 		else if (opt == 2) {
 			printf("\nResult");
-			printf("\ne = 271828182845904523536028747135266249");
+			printf("\ne = 2.71828182845904523536028747135266249");
 			printf("\n\n");
 			system("pause");
 			return 0;
@@ -1238,14 +1238,14 @@ int main() {
 		}
 		else if (opt == 4) {
 			printf("\nResult");
-			printf("\nsqrt(2) = 141421356237309504880168872420969807");
+			printf("\nsqrt(2) = 1.41421356237309504880168872420969807");
 			printf("\n\n");
 			system("pause");
 			return 0;
 		}
 		else if (opt == 5) {
 			printf("\nResult");
-			printf("\nsqrt(3) = 1732050807568877293527446341505872368");
+			printf("\nsqrt(3) = 1.732050807568877293527446341505872368");
 			printf("\n\n");
 			system("pause");
 			return 0;
