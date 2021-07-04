@@ -12,8 +12,9 @@ int main() {
 	//
 	// Variables
 	//
+	const double h = 1.0e-6;
 	float x, y, z, result;
-	double a, der;
+	double x1, x2, y1, y2, a, der;
 	int opt, n;
 	long longx;
 
@@ -30,7 +31,7 @@ int main() {
 	printf("\nOptions");
 	printf("\n1. The basic arithmetic operations");
 	printf("\n2. Area calculator");
-	printf("\n3. Derivative calculator")
+	printf("\n3. Derivative calculator");
 	printf("\n4. Trigonometric functions");
 	printf("\n5. Hyperbolic functions");
 	printf("\n6. Exponential and logarithmic functions");
@@ -225,7 +226,7 @@ int main() {
 			printf("Enter degree: ");
 			scanf_s("%f", &y);
 			fseek(stdin, 0, SEEK_SET);
-			result = x * x * (y/360);
+			result = x * x * (y / 360);
 			printf("\nResult");
 			printf("\n%f^2 * %f/360 = %f", x, y, result);
 			printf("\n\n");
@@ -279,13 +280,13 @@ int main() {
 		printf("1. Derivative of Trigonometric functions\n");
 		printf("2. Derivative of Exponential and logarithmic functions\n");
 		printf("3. Derivative of Power functions\n");
-		printf("Enter options: "); 
+		printf("Enter options: ");
 		scanf_s("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 		printf("\n");
-		
+
 		if (opt == 1) {
-			printf("Detailed options\n");
+			printf("Options\n");
 			printf("1. Compute derivative of cosine\n");
 			printf("2. Compute derivative of sine\n");
 			printf("3. Compute derivative of tangent\n");
@@ -296,62 +297,68 @@ int main() {
 			scanf_s("%d", &opt);
 			fseek(stdin, 0, SEEK_SET);
 			printf("\n");
-			
+
 			if (opt == 1) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(cos, a);
+				x1 = a - h; x2 = a + h; y1 = cos(x1); y2 = cos(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\ncos'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 2) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(sin, a);
+				x1 = a - h; x2 = a + h; y1 = sin(x1); y2 = sin(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\nsin'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 3) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(tan, a);
+				x1 = a - h; x2 = a + h; y1 = tan(x1); y2 = tan(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\ntan'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 4) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(acos, a);
+				x1 = a - h; x2 = a + h; y1 = acos(x1); y2 = acos(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\narccos'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 5) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(asin, a);
+				x1 = a - h; x2 = a + h; y1 = asin(x1); y2 = asin(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\narcsin'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 6) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(atan, a);
+				x1 = a - h; x2 = a + h; y1 = atan(x1); y2 = atan(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\narctan'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
@@ -364,41 +371,44 @@ int main() {
 				system("pause");
 				return 1;
 			}
-		} 
+		}
 		else if (opt == 2) {
-			printf("Detailed options\n");
+			printf("Options\n");
 			printf("1. Compute derivative of exponential function\n");
 			printf("2. Compute derivative of natural logarithm\n");
 			printf("3. Compute derivative of common logarithm\n");
 			printf("Enter choice: ");
 			scanf_s("%d", &opt);
 			printf("\n");
-			
+
 			if (opt == 1) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(exp, a);
+				x1 = a - h; x2 = a + h; y1 = exp(x1); y2 = exp(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\nexp'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 2) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(log, a);
+				x1 = a - h; x2 = a + h; y1 = log(x1); y2 = log(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\nlog'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 3) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(log10, a);
+				x1 = a - h; x2 = a + h; y1 = log10(x1); y2 = log10(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\nlog10'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
@@ -411,30 +421,32 @@ int main() {
 				system("pause");
 				return 1;
 			}
-		} 
+		}
 		else if (opt == 3) {
-			printf("Detailed options\n");
+			printf("Options\n");
 			printf("1. Compute derivative of square root\n");
 			printf("2. Compute derivative of cubic root\n");
 			printf("Enter choice: ");
 			scanf_s("%d", &opt);
 			printf("\n");
-			
+
 			if (opt == 1) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(sqrt, a);
+				x1 = a - h; x2 = a + h; y1 = sqrt(x1); y2 = sqrt(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\nsqrt'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
 				return 0;
-			} 
+			}
 			else if (opt == 2) {
 				printf("Enter a: ");
 				scanf_s("%lf", &a);
 				fseek(stdin, 0, SEEK_SET);
-				der = derive(cbrt, a);
+				x1 = a - h; x2 = a + h; y1 = cbrt(x1); y2 = cbrt(x2);
+				der = (y2 - y1) / (x2 - x1);
 				printf("\ncbrt'(%lf) = %lf\n", a, der);
 				printf("\n");
 				system("pause");
