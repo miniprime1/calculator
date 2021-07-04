@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -13,6 +13,7 @@ int main() {
 	// Variables
 	//
 	float x, y, z, result;
+	double a, der;
 	int opt, n;
 	long longx;
 
@@ -29,17 +30,18 @@ int main() {
 	printf("\nOptions");
 	printf("\n1. The basic arithmetic operations");
 	printf("\n2. Area calculator");
-	printf("\n3. Trigonometric functions");
-	printf("\n4. Hyperbolic functions");
-	printf("\n5. Exponential and logarithmic functions");
-	printf("\n6. Power functions");
-	printf("\n7. Error and gamma functions");
-	printf("\n8. Rounding and remainder functions");
-	printf("\n9. Floating-point manipulation functions");
-	printf("\n10. Minimum, maximum, difference functions");
-	printf("\n11. Other functions");
-	printf("\n12. Mathematical constants");
-	printf("\n13. Exit");
+	printf("\n3. Derivative calculator")
+	printf("\n4. Trigonometric functions");
+	printf("\n5. Hyperbolic functions");
+	printf("\n6. Exponential and logarithmic functions");
+	printf("\n7. Power functions");
+	printf("\n8. Error and gamma functions");
+	printf("\n9. Rounding and remainder functions");
+	printf("\n10. Floating-point manipulation functions");
+	printf("\n11. Minimum, maximum, difference functions");
+	printf("\n12. Other functions");
+	printf("\n13. Mathematical constants");
+	printf("\n14. Exit");
 	printf("\nEnter choice: ");
 	scanf_s("%d", &opt);
 	fseek(stdin, 0, SEEK_SET);
@@ -270,9 +272,195 @@ int main() {
 	}
 
 	//
-	// Trigonometric functions
+	// Derivative calculator
 	//
 	else if (opt == 3) {
+		printf("\nOptions\n");
+		printf("1. Derivative of Trigonometric functions\n");
+		printf("2. Derivative of Exponential and logarithmic functions\n");
+		printf("3. Derivative of Power functions\n");
+		printf("Enter options: "); 
+		scanf_s("%d", &opt);
+		fseek(stdin, 0, SEEK_SET);
+		printf("\n");
+		
+		if (opt == 1) {
+			printf("Detailed options\n");
+			printf("1. Compute derivative of cosine\n");
+			printf("2. Compute derivative of sine\n");
+			printf("3. Compute derivative of tangent\n");
+			printf("4. Compute derivative of arc cosine\n");
+			printf("5. Compute derivative of arc sine\n");
+			printf("6. Compute derivative of arc tangent\n");
+			printf("Enter choice: ");
+			scanf_s("%d", &opt);
+			fseek(stdin, 0, SEEK_SET);
+			printf("\n");
+			
+			if (opt == 1) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(cos, a);
+				printf("\ncos'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 2) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(sin, a);
+				printf("\nsin'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 3) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(tan, a);
+				printf("\ntan'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 4) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(acos, a);
+				printf("\narccos'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 5) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(asin, a);
+				printf("\narcsin'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 6) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(atan, a);
+				printf("\narctan'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			}
+			else {
+				printf("\n");
+				printf("Error: invalid choice");
+				printf("\n\n");
+				system("pause");
+				return 1;
+			}
+		} 
+		else if (opt == 2) {
+			printf("Detailed options\n");
+			printf("1. Compute derivative of exponential function\n");
+			printf("2. Compute derivative of natural logarithm\n");
+			printf("3. Compute derivative of common logarithm\n");
+			printf("Enter choice: ");
+			scanf_s("%d", &opt);
+			printf("\n");
+			
+			if (opt == 1) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(exp, a);
+				printf("\nexp'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 2) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(log, a);
+				printf("\nlog'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 3) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(log10, a);
+				printf("\nlog10'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			}
+			else {
+				printf("\n");
+				printf("Error: invalid choice");
+				printf("\n\n");
+				system("pause");
+				return 1;
+			}
+		} 
+		else if (opt == 3) {
+			printf("Detailed options\n");
+			printf("1. Compute derivative of square root\n");
+			printf("2. Compute derivative of cubic root\n");
+			printf("Enter choice: ");
+			scanf_s("%d", &opt);
+			printf("\n");
+			
+			if (opt == 1) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(sqrt, a);
+				printf("\nsqrt'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			} 
+			else if (opt == 2) {
+				printf("Enter a: ");
+				scanf_s("%lf", &a);
+				fseek(stdin, 0, SEEK_SET);
+				der = derive(cbrt, a);
+				printf("\ncbrt'(%lf) = %lf\n", a, der);
+				printf("\n");
+				system("pause");
+				return 0;
+			}
+			else {
+				printf("\n");
+				printf("Error: invalid choice");
+				printf("\n\n");
+				system("pause");
+				return 1;
+			}
+		}
+		else {
+			printf("\n");
+			printf("Error: invalid choice");
+			printf("\n\n");
+			system("pause");
+			return 1;
+		}
+	}
+
+	//
+	// Trigonometric functions
+	//
+	else if (opt == 4) {
 		printf("\nOptions");
 		printf("\n1. Compute cosine");
 		printf("\n2. Compute sine");
@@ -384,7 +572,7 @@ int main() {
 	//
 	// Hyperbolic functions
 	//
-	else if (opt == 4) {
+	else if (opt == 5) {
 		printf("\nOptions");
 		printf("\n1. Compute hyperbolic cosine");
 		printf("\n2. Compute hyperbolic sine");
@@ -480,7 +668,7 @@ int main() {
 	//
 	// Exponential and logarithmic functions
 	//
-	else if (opt == 5) {
+	else if (opt == 6) {
 		printf("\nOptions");
 		printf("\n1. Natural Logarithm");
 		printf("\n2. Common Logarithm");
@@ -647,7 +835,7 @@ int main() {
 	//
 	// Power functions
 	//
-	if (opt == 6) {
+	if (opt == 7) {
 		printf("\nOptions");
 		printf("\n1. Raise to power");
 		printf("\n2. Square root");
@@ -723,7 +911,7 @@ int main() {
 	//
 	// Error and gamma functions
 	//
-	if (opt == 7) {
+	if (opt == 8) {
 		printf("\nOptions");
 		printf("\n1. Error function");
 		printf("\n2. Complementary error function");
@@ -793,7 +981,7 @@ int main() {
 	//
 	// Rounding and remainder functions
 	//
-	else if (opt == 8) {
+	else if (opt == 9) {
 		printf("\nOptions");
 		printf("\n1. Round up value");
 		printf("\n2. Round down value");
@@ -973,7 +1161,7 @@ int main() {
 	//
 	// Floating-point manipulation functions
 	//
-	if (opt == 9) {
+	if (opt == 10) {
 		printf("\nOptions");
 		printf("\n1. Copy sign");
 		printf("\n2. Next representable value");
@@ -1039,7 +1227,7 @@ int main() {
 	//
 	// Minimum, maximum, difference functions
 	//
-	if (opt == 10) {
+	if (opt == 11) {
 		printf("\nOptions");
 		printf("\n1. Positive difference");
 		printf("\n2. Maximum value");
@@ -1105,7 +1293,7 @@ int main() {
 	//
 	// Other functions
 	//
-	if (opt == 11) {
+	if (opt == 12) {
 		printf("\nOptions");
 		printf("\n1. Compute absolute value (fabs)");
 		printf("\n2. Compute absolute value (abs)");
@@ -1199,7 +1387,7 @@ int main() {
 	//
 	// Mathematical constants
 	//
-	else if (opt == 12) {
+	else if (opt == 13) {
 		printf("\nOptions");
 		printf("\n1. Pi");
 		printf("\n2. e");
@@ -1297,7 +1485,7 @@ int main() {
 	//
 	// Exit
 	//
-	else if (opt == 13) {
+	else if (opt == 14) {
 		return 0;
 	}
 
