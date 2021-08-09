@@ -1,4 +1,4 @@
-# CLI Calculator, version 1.0
+# CLI Calculator: Console Calculator for Windows
 Copyright (C) 2020 miniprime1. All rights reserved.
 
 
