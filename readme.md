@@ -1,6 +1,8 @@
 # CLI Calculator: Console Calculator for Windows
 Copyright (C) 2020 miniprime1. All rights reserved.
 
+Configured for "x86_64-w64-mingw32".
+
 
 ## License:
  - [MIT License](license.txt)
