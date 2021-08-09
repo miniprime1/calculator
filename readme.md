@@ -1,16 +1,20 @@
 # CLI Calculator, version 1.0
 Copyright (C) 2020 miniprime1. All rights reserved.
 
+
 ## License:
  - [MIT License](license.txt)
+
 
 ## Include:
  - stdio.h
  - stdlib.h
  - math.h
 
+
 ## Reference:
  - cplusplus.com(<math.h> documentation): http://www.cplusplus.com/reference/cmath/
+
 
 ## Supports:
  - The basic arithmetic operations: Addition, Subtraction, Multiplication, Division
