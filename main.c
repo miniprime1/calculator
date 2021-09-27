@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -56,7 +56,7 @@ int main() {
 	printf("\n14. Mathematical constants");
 	printf("\n15. Exit");
 	printf("\nEnter choice: ");
-	scanf_s("%d", &opt);
+	scanf("%d", &opt);
 	fseek(stdin, 0, SEEK_SET);
 
 	//
@@ -69,16 +69,16 @@ int main() {
 		printf("\n3. Multiplication");
 		printf("\n4. Division");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x + y;
 			printf("\nResult");
@@ -90,10 +90,10 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x - y;
 			printf("\nResult");
@@ -105,10 +105,10 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * y;
 			printf("\nResult");
@@ -120,10 +120,10 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x / y;
 			printf("\nResult");
@@ -155,16 +155,16 @@ int main() {
 		printf("\n7. Parallelogram");
 		printf("\n8. Ellipse");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter length: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter width: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * y;
 			printf("\nResult");
@@ -176,10 +176,10 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter base: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter height: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = (x * y) / 2;
 			printf("\nResult");
@@ -191,13 +191,13 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter base1: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter base2: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter height: ");
-			scanf_s("%lf", &z);
+			scanf("%lf", &z);
 			fseek(stdin, 0, SEEK_SET);
 			result = (x + y) / 2 * z;
 			printf("\nResult");
@@ -209,7 +209,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter radius: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * x * PI;
 			printf("\nResult");
@@ -221,7 +221,7 @@ int main() {
 		else if (opt == 5) {
 			printf("\n");
 			printf("Enter side: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * x;
 			printf("\nResult");
@@ -233,10 +233,10 @@ int main() {
 		else if (opt == 6) {
 			printf("\n");
 			printf("Enter radius: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter degree(deg): ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * x * (y / 360);
 			printf("\nResult");
@@ -248,14 +248,14 @@ int main() {
 		else if (opt == 7) {
 			printf("\n");
 			printf("Enter base: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter width: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * y;
 			printf("\nResult");
-			printf("\S = n%lf * %lf = %lf", x, y, result);
+			printf("\nS = n%lf * %lf = %lf", x, y, result);
 			printf("\n\n");
 			system("pause");
 			return 0;
@@ -263,10 +263,10 @@ int main() {
 		else if (opt == 8) {
 			printf("\n");
 			printf("Enter axis1: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter axis2: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = x * y * PI;
 			printf("\nResult");
@@ -292,7 +292,7 @@ int main() {
 		printf("\n1. Derivative calculator");
 		printf("\n2. Definite Integral calculator");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
@@ -301,7 +301,7 @@ int main() {
 			printf("2. Derivative of Exponential and logarithmic functions\n");
 			printf("3. Derivative of Power functions\n");
 			printf("Enter choice: ");
-			scanf_s("%d", &opt);
+			scanf("%d", &opt);
 			fseek(stdin, 0, SEEK_SET);
 			printf("\n");
 
@@ -314,13 +314,13 @@ int main() {
 				printf("5. Compute derivative of arc sine\n");
 				printf("6. Compute derivative of arc tangent\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				fseek(stdin, 0, SEEK_SET);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = cos(x1); y2 = cos(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -332,7 +332,7 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = sin(x1); y2 = sin(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -344,7 +344,7 @@ int main() {
 				}
 				else if (opt == 3) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = tan(x1); y2 = tan(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -356,7 +356,7 @@ int main() {
 				}
 				else if (opt == 4) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = acos(x1); y2 = acos(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -368,7 +368,7 @@ int main() {
 				}
 				else if (opt == 5) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = asin(x1); y2 = asin(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -380,7 +380,7 @@ int main() {
 				}
 				else if (opt == 6) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = atan(x1); y2 = atan(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -404,12 +404,12 @@ int main() {
 				printf("2. Compute derivative of natural logarithm\n");
 				printf("3. Compute derivative of common logarithm\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = exp(x1); y2 = exp(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -421,7 +421,7 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = log(x1); y2 = log(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -433,7 +433,7 @@ int main() {
 				}
 				else if (opt == 3) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = log10(x1); y2 = log10(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -456,12 +456,12 @@ int main() {
 				printf("1. Compute derivative of square root\n");
 				printf("2. Compute derivative of cubic root\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = sqrt(x1); y2 = sqrt(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -473,7 +473,7 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter a: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					x1 = a - h; x2 = a + h; y1 = cbrt(x1); y2 = cbrt(x2);
 					der = (y2 - y1) / (x2 - x1);
@@ -505,7 +505,7 @@ int main() {
 			printf("2. Definite Integral of Exponential and logarithmic functions\n");
 			printf("3. Definite Integral of Power functions\n");
 			printf("Enter choice: ");
-			scanf_s("%d", &opt);
+			scanf("%d", &opt);
 			fseek(stdin, 0, SEEK_SET);
 			printf("\n");
 
@@ -518,15 +518,15 @@ int main() {
 				printf("5. Compute Definite Integral of arc sine\n");
 				printf("6. Compute Definite Integral of arc tangent\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				fseek(stdin, 0, SEEK_SET);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += cos(a + delta * k) * delta; }
@@ -538,9 +538,9 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += sin(a + delta * k) * delta; }
@@ -552,9 +552,9 @@ int main() {
 				}
 				else if (opt == 3) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += tan(a + delta * k) * delta; }
@@ -566,9 +566,9 @@ int main() {
 				}
 				else if (opt == 4) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += acos(a + delta * k) * delta; }
@@ -580,9 +580,9 @@ int main() {
 				}
 				else if (opt == 5) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += asin(a + delta * k) * delta; }
@@ -594,9 +594,9 @@ int main() {
 				}
 				else if (opt == 6) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += atan(a + delta * k) * delta; }
@@ -620,14 +620,14 @@ int main() {
 				printf("2. Compute Definite Integral of natural logarithm\n");
 				printf("3. Compute Definite Integral of common logarithm\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += exp(a + delta * k) * delta; }
@@ -639,9 +639,9 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += log(a + delta * k) * delta; }
@@ -653,9 +653,9 @@ int main() {
 				}
 				else if (opt == 3) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += log10(a + delta * k) * delta; }
@@ -678,14 +678,14 @@ int main() {
 				printf("1. Compute Definite Integral of square root\n");
 				printf("2. Compute Definite Integral of cubic root\n");
 				printf("Enter choice: ");
-				scanf_s("%d", &opt);
+				scanf("%d", &opt);
 				printf("\n");
 
 				if (opt == 1) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += sqrt(a + delta * k) * delta; }
@@ -697,9 +697,9 @@ int main() {
 				}
 				else if (opt == 2) {
 					printf("Enter upper bound: ");
-					scanf_s("%lf", &b);
+					scanf("%lf", &b);
 					printf("Enter lower bound: ");
-					scanf_s("%lf", &a);
+					scanf("%lf", &a);
 					fseek(stdin, 0, SEEK_SET);
 					double delta = (b - a) / inf;
 					for (int k = 1; k < inf; k++) { result += cbrt(a + delta * k) * delta; }
@@ -742,13 +742,13 @@ int main() {
 		printf("2. Linear Equation (ax+b=0)\n");
 		printf("3. Quadratic Equation (ax^2+bx+c=0)\n");
 		printf("Enter option: "); 
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 
 		printf("\n");
 
 		if (opt == 1) {
 			printf("Enter a: "); 
-			scanf_s("%lf", &a);
+			scanf("%lf", &a);
 			if (a == 0) { result_Eq = "There is contless solution."; }
 			else { result_Eq = "There is no solution."; }
 			printf("\n");
@@ -760,9 +760,9 @@ int main() {
 		}
 		else if (opt == 2) {
 			printf("Enter a: "); 
-			scanf_s("%lf", &a);
+			scanf("%lf", &a);
 			printf("Enter b: "); 
-			scanf_s("%lf", &b);
+			scanf("%lf", &b);
 			if (a == 0) { 
 				if (b == 0) { result_Eq = "There is contless solution."; }
 				else { result_Eq = "There is no solution."; }
@@ -780,11 +780,11 @@ int main() {
 		}
 		else if (opt == 3) {
 			printf("Enter a: ");
-			scanf_s("%lf", &a);
+			scanf("%lf", &a);
 			printf("Enter b: ");
-			scanf_s("%lf", &b);
+			scanf("%lf", &b);
 			printf("Enter c: ");
-			scanf_s("%lf", &c);
+			scanf("%lf", &c);
 			if (a == 0) {
 				if (b == 0) {
 					if (c == 0) { result_Eq = "There is contless solution."; }
@@ -834,13 +834,13 @@ int main() {
 		printf("\n6. Compute arc tangent");
 		printf("\n7. Compute arc tangent with two parameters");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = cos(x);
 			printf("\nResult");
@@ -852,7 +852,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = sin(x);
 			printf("\nResult");
@@ -864,7 +864,7 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = tan(x);
 			printf("\nResult");
@@ -876,7 +876,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = acos(x);
 			printf("\nResult");
@@ -888,7 +888,7 @@ int main() {
 		else if (opt == 5) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = asin(x);
 			printf("\nResult");
@@ -900,7 +900,7 @@ int main() {
 		else if (opt == 6) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = atan(x);
 			printf("\nResult");
@@ -912,10 +912,10 @@ int main() {
 		else if (opt == 7) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = atan2(x, y);
 			printf("\nResult");
@@ -945,13 +945,13 @@ int main() {
 		printf("\n5. Compute area hyperbolic sine");
 		printf("\n6. Compute area hyperbolic tangent");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = cosh(x);
 			printf("\nResult");
@@ -963,7 +963,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = sinh(x);
 			printf("\nResult");
@@ -975,7 +975,7 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = tanh(x);
 			printf("\nResult");
@@ -987,7 +987,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = acosh(x);
 			printf("\nResult");
@@ -999,7 +999,7 @@ int main() {
 		else if (opt == 5) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = asinh(x);
 			printf("\nResult");
@@ -1011,7 +1011,7 @@ int main() {
 		else if (opt == 6) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = atanh(x);
 			printf("\nResult");
@@ -1046,13 +1046,13 @@ int main() {
 		printf("\n10. Get significant and exponent");
 		printf("\n11. Generate value from significant and exponent");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = log(x);
 			printf("\nResult");
@@ -1064,7 +1064,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = log10(x);
 			printf("\nResult");
@@ -1076,7 +1076,7 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = ilogb(x);
 			printf("\nResult");
@@ -1088,7 +1088,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = log1p(x);
 			printf("\nResult");
@@ -1100,7 +1100,7 @@ int main() {
 		else if (opt == 5) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = log2(x);
 			printf("\nResult");
@@ -1112,7 +1112,7 @@ int main() {
 		else if (opt == 6) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = logb(x);
 			printf("\nResult");
@@ -1124,7 +1124,7 @@ int main() {
 		else if (opt == 7) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = exp(x);
 			printf("\nResult");
@@ -1136,7 +1136,7 @@ int main() {
 		else if (opt == 8) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = exp2(x);
 			printf("\nResult");
@@ -1148,7 +1148,7 @@ int main() {
 		else if (opt == 9) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = expm1(x);
 			printf("\nResult");
@@ -1160,10 +1160,10 @@ int main() {
 		else if (opt == 10) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%d", &n);
+			scanf("%d", &n);
 			fseek(stdin, 0, SEEK_SET);
 			result = frexp(x, &n);
 			printf("\nResult");
@@ -1175,10 +1175,10 @@ int main() {
 		else if (opt == 11) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%d", &intx);
+			scanf("%d", &intx);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%d", &inty);
+			scanf("%d", &inty);
 			fseek(stdin, 0, SEEK_SET);
 			result = ldexp(intx, inty);
 			printf("\nResult");
@@ -1206,16 +1206,16 @@ int main() {
 		printf("\n3. Cubic root");
 		printf("\n4. Hypotenuse");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = pow(x, y);
 			printf("\nResult");
@@ -1227,7 +1227,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = sqrt(x);
 			printf("\nResult");
@@ -1239,7 +1239,7 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = cbrt(x);
 			printf("\nResult");
@@ -1251,10 +1251,10 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = hypot(x, y);
 			printf("\nResult");
@@ -1282,13 +1282,13 @@ int main() {
 		printf("\n3. Gamma function");
 		printf("\n4. Log-gamma function");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = erf(x);
 			printf("\nResult");
@@ -1300,7 +1300,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = erfc(x);
 			printf("\nResult");
@@ -1312,7 +1312,7 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = tgamma(x);
 			printf("\nResult");
@@ -1324,7 +1324,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = lgamma(x);
 			printf("\nResult");
@@ -1360,13 +1360,13 @@ int main() {
 		printf("\n11. Round to nearby integral value");
 		printf("\n12. Remainder (IEC 60559)");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = ceil(x);
 			printf("\nResult");
@@ -1378,7 +1378,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = floor(x);
 			printf("\nResult");
@@ -1390,10 +1390,10 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = fmod(x, y);
 			printf("\nResult");
@@ -1405,7 +1405,7 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = trunc(x);
 			printf("\nResult");
@@ -1417,7 +1417,7 @@ int main() {
 		else if (opt == 5) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = round(x);
 			printf("\nResult");
@@ -1429,7 +1429,7 @@ int main() {
 		else if (opt == 6) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = lround(x);
 			printf("\nResult");
@@ -1441,7 +1441,7 @@ int main() {
 		else if (opt == 7) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = llround(x);
 			printf("\nResult");
@@ -1453,7 +1453,7 @@ int main() {
 		else if (opt == 8) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = rint(x);
 			printf("\nResult");
@@ -1465,7 +1465,7 @@ int main() {
 		else if (opt == 9) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%ld", &longx);
+			scanf("%ld", &longx);
 			fseek(stdin, 0, SEEK_SET);
 			result = lrint(longx);
 			printf("\nResult");
@@ -1477,7 +1477,7 @@ int main() {
 		else if (opt == 10) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%ld", &longx);
+			scanf("%ld", &longx);
 			fseek(stdin, 0, SEEK_SET);
 			result = llrint(longx);
 			printf("\nResult");
@@ -1489,7 +1489,7 @@ int main() {
 		else if (opt == 11) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = nearbyint(x);
 			printf("\nResult");
@@ -1501,10 +1501,10 @@ int main() {
 		else if (opt == 12) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = remainder(x, y);
 			printf("\nResult");
@@ -1531,16 +1531,16 @@ int main() {
 		printf("\n2. Next representable value");
 		printf("\n3. Next representable value toward precise value");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = copysign(x, y);
 			printf("\nResult");
@@ -1552,10 +1552,10 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = nextafter(x, y);
 			printf("\nResult");
@@ -1567,10 +1567,10 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = nexttoward(x, y);
 			printf("\nResult");
@@ -1597,16 +1597,16 @@ int main() {
 		printf("\n2. Maximum value");
 		printf("\n3. Minimum value");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = fdim(x, y);
 			printf("\nResult");
@@ -1618,10 +1618,10 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = fmax(x, y);
 			printf("\nResult");
@@ -1633,10 +1633,10 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = fmin(x, y);
 			printf("\nResult");
@@ -1664,13 +1664,13 @@ int main() {
 		printf("\n3. Multiply-add");
 		printf("\n4. Average");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = fabs(x);
 			printf("\nResult");
@@ -1682,7 +1682,7 @@ int main() {
 		else if (opt == 2) {
 			printf("\n");
 			printf("Enter input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			result = abs(x);
 			printf("\nResult");
@@ -1694,13 +1694,13 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 3rd input: ");
-			scanf_s("%lf", &z);
+			scanf("%lf", &z);
 			fseek(stdin, 0, SEEK_SET);
 			result = fma(x, y, z);
 			printf("\nResult");
@@ -1712,10 +1712,10 @@ int main() {
 		else if (opt == 3) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = fmin(x, y);
 			printf("\nResult");
@@ -1727,10 +1727,10 @@ int main() {
 		else if (opt == 4) {
 			printf("\n");
 			printf("Enter 1st input: ");
-			scanf_s("%lf", &x);
+			scanf("%lf", &x);
 			fseek(stdin, 0, SEEK_SET);
 			printf("Enter 2nd input: ");
-			scanf_s("%lf", &y);
+			scanf("%lf", &y);
 			fseek(stdin, 0, SEEK_SET);
 			result = (x + y) / 2;
 			printf("\nResult");
@@ -1762,7 +1762,7 @@ int main() {
 		printf("\n7. Gamma: Euler-Mascheroni constant");
 		printf("\n8. Phi: Golden ratio");
 		printf("\nEnter choice: ");
-		scanf_s("%d", &opt);
+		scanf("%d", &opt);
 		fseek(stdin, 0, SEEK_SET);
 
 		if (opt == 1) {
