@@ -6,7 +6,7 @@ Configured for "x86_64-w64-mingw32".
  - Console Calculator for Windows
  - Support almost all function in "math.h"
   
-## Feature
+## Features
  - The basic arithmetic operations: Addition, Subtraction, Multiplication, Division
  - Area calculator: Rectangle, Triangle, Trapezoid, Circle, Square, Sector, Parallelogram, Ellipse
  - Calculus calculator: Derivative calculator, Definite Integral calculator
