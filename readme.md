@@ -2,18 +2,11 @@
 Copyright (C) 2020 miniprime1. All rights reserved.  
 Configured for "x86_64-w64-mingw32".
   
-## License:
- - [MIT License](license.txt)
+## Overview
+ - Console Calculator for Windows
+ - Support almost all function in "math.h"
   
-## Include:
- - stdio.h
- - stdlib.h
- - math.h
-  
-## Reference:
- - cplusplus.com(<math.h> documentation): http://www.cplusplus.com/reference/cmath/
-  
-## Supports:
+## Feature
  - The basic arithmetic operations: Addition, Subtraction, Multiplication, Division
  - Area calculator: Rectangle, Triangle, Trapezoid, Circle, Square, Sector, Parallelogram, Ellipse
  - Calculus calculator: Derivative calculator, Definite Integral calculator
@@ -28,3 +21,6 @@ Configured for "x86_64-w64-mingw32".
  - Minimum, maximum, difference functions: Positive difference, Maximum value, Minimum value
  - Other functions: Compute absolute value (fabs), Compute absolute value (abs), Multiply-add, Average
  - Mathematical constants: Pi(Circumference), E(Napier's constant), I(Imaginary number), Sqrt(2)(Square root of 2), Sqrt(3)(Square root of 3), Sqrt(5)(Square root of 5), EulerGamma(Euler-Mascheroni constant), Phi(Golden ratio)
+
+## License
+ - [MIT License](license.txt)
